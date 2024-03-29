@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-:root{
+:root {
     --ColorOne: #F2F2F2FF;
     --ColorTwo: #3E5776FF;
     --ColorThree: #FEB52FFF;
@@ -9,24 +9,28 @@
 
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 
-body{
+body {
     font-family: Roboto, Arial, serif;
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
 }
 
-input,textarea{
+input,
+textarea {
     border: none;
     outline: none;
     color: var(--ColorTwo);
 }
 
-.index{
+.index {
     padding: .5rem 0;
     background: var(--ColorOne);
     width: 100%;
@@ -35,44 +39,45 @@ input,textarea{
 
 
 
-.introduction_section{
+.introduction_section {
     margin: auto !important;
     width: 80%;
     background: var(--ColorOne);
 }
 
-.introduction_section_flex{
+.introduction_section_flex {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.introduction_section h1{
+.introduction_section h1 {
     text-align: center;
     font-size: 2.2rem;
     font-weight: bolder;
     color: var(--ColorTwo);
 }
-.introduction_section .banner{
+
+.introduction_section .banner {
     margin: auto !important;
     width: 80%;
     height: auto !important;
 }
 
-.introduction_section img{
-width: 100%;
-height: 100%;
+.introduction_section img {
+    width: 100%;
+    height: 100%;
 }
 
-.content_flex_container{
+.content_flex_container {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     margin-bottom: 2rem;
 }
 
-.content_flex_container p{
-    line-height:2rem ;
+.content_flex_container p {
+    line-height: 2rem;
     font-size: 1.15rem;
     color: var(--ColorTwo);
 }
@@ -80,7 +85,7 @@ height: 100%;
 
 /* cohort-section */
 
-.cohort-section{
+.cohort-section {
     margin: auto !important;
     width: 80%;
     height: 18rem;
@@ -91,7 +96,7 @@ height: 100%;
     position: relative;
 }
 
-.cohort-section::before{
+.cohort-section::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -103,9 +108,9 @@ height: 100%;
 }
 
 
-.cohort-section h2{
+.cohort-section h2 {
     line-height: 4rem;
-    font-size:2.5rem;
+    font-size: 2.5rem;
     font-weight: bolder;
     color: #fff;
     width: 80%;
@@ -116,16 +121,16 @@ height: 100%;
     align-items: center;
     position: absolute;
     left: 7%;
-    
+
 }
 
-.available_courses{
+.available_courses {
     margin: auto !important;
     width: 70%;
     background: var(--ColorOne);
 }
 
-.available_courses_flex{
+.available_courses_flex {
     margin: 4rem 0;
     width: 100%;
     display: flex;
@@ -133,7 +138,7 @@ height: 100%;
     justify-content: space-between;
 }
 
-.available_courses .content h3{
+.available_courses .content h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: var(--ColorTwo);
@@ -145,83 +150,112 @@ height: 100%;
     height: 40%;
 }
 
-.available_courses .image img{
+.available_courses .image img {
     width: 100%;
     height: 100%;
 }
-.courses_box{
+
+.courses_box {
     display: flex;
     flex-direction: column;
     gap: .5rem;
-    
+
 }
 
-.courses_box h4{
+.courses_box h4 {
     font-size: 1.15rem;
-    font-family:serif;
+    font-family: serif;
     font-weight: 600;
     color: var(--ColorTwo);
 }
 
 
-.message_section{
+.message_section {
     padding: 2rem 0;
     width: 100%;
 }
 
-.message_section h4{
+.message_section h4 {
     text-align: center;
-    font-size:1.7rem;
+    font-size: 1.7rem;
     color: #0A7048FF;
 }
 
 
 
-.registration_form_section{
+.registration_form_section {
     padding: 3rem 0;
     width: 100%;
     height: auto !important;
     background: rgb(10, 112, 72);
 }
 
-.registration_form_con{
+.registration_form_con {
     width: 70%;
     margin: auto;
 }
 
-.registration_form_section form{
+.date_instruction {
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.date_instruction .date {
+    width: 100%;
+}
+
+.date_instruction .date h4 {
+    line-height: 2.4rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--ColorOne);
+}
+
+
+
+.date_instruction .instruction b {
+    line-height: 2rem;
+    font-size: 1.15rem;
+    color: var(--ColorOne);
+    font-weight: 500;
+}
+
+.registration_form_section form {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1.1rem;
 }
 
-.registration_form_section form .input_box{
+.registration_form_section form .input_box {
     display: flex;
     flex-direction: column;
     gap: .4rem;
 }
 
-.registration_form_section form .input_box label{
-color: var(--ColorOne);
+.registration_form_section form .input_box label {
+    color: var(--ColorOne);
 }
 
-.registration_form_section form .input_box input{
+.registration_form_section form .input_box input {
     padding: .8rem;
 }
 
 
-.registration_form_section form .input_box input:focus{
+.registration_form_section form .input_box input:focus {
     outline: 3px solid var(--ColorFour);
 }
 
-.registration_form_section form .input_box textarea{
+.registration_form_section form .input_box textarea {
     padding: .5rem;
-    max-width: 100% ;
+    max-width: 100%;
     height: 6rem;
 }
 
-.registration_form_section form .input_box .btn{
+.registration_form_section form .input_box .btn {
     font-size: 1.05rem;
     font-weight: 600;
     width: 8rem;
@@ -229,26 +263,26 @@ color: var(--ColorOne);
     cursor: pointer;
 }
 
-.registration_form_section form .input_box .btn:hover{
-   background: rgb(90, 211, 102);
-   color: var(--ColorOne);
-   transition: .2s ease-in-out;
+.registration_form_section form .input_box .btn:hover {
+    background: rgb(90, 211, 102);
+    color: var(--ColorOne);
+    transition: .2s ease-in-out;
 }
 
 
-.greetings{
+.greetings {
     padding-top: 5rem;
     width: 100%;
 }
 
-.greetings p{
+.greetings p {
     font-size: 1.15rem;
     color: var(--ColorOne);
     text-align: center;
 }
 
 
-.social_links{
+.social_links {
     padding: 1rem 0;
     width: fit-content;
     margin: auto;
@@ -257,33 +291,33 @@ color: var(--ColorOne);
     gap: 2rem;
 }
 
-.social_links .fa-brands{
+.social_links .fa-brands {
     font-size: 1.1rem;
 }
 
-.social_links a{
+.social_links a {
     color: var(--ColorOne);
 }
 
 
-footer{
+footer {
     padding: 1rem 0;
     width: 100%;
     height: auto;
     background: #fff;
 }
 
-footer .sponsor{
+footer .sponsor {
     width: 20rem;
     margin: auto;
 }
 
-footer .sponsor img{
+footer .sponsor img {
     width: 100%;
 }
 
 
-.welcome{
+.welcome {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -293,8 +327,104 @@ footer .sponsor img{
 
 .styled-hr {
     width: 40%;
-    border: none; 
-    border-top: 1px solid var(--ColorTwo); 
+    border: none;
+    border-top: 1px solid var(--ColorTwo);
     margin: auto;
     padding: .5rem 0;
+}
+
+
+
+/* ============ RESPONSIVENESS ================== */
+
+@media screen and (max-width: 768px) {
+    .introduction_section {
+        width: 95%;
+    }
+
+    .introduction_section_flex {
+        gap: 1rem;
+    }
+
+    .introduction_section h1 {
+        font-size: 1.4rem;
+    }
+
+
+    .introduction_section .banner {
+        width: 100%;
+    }
+
+
+    .content_flex_container p {
+        font-size: 1rem;
+    }
+
+    .cohort-section {
+        width: 100%;
+        height: 15rem;
+    }
+
+
+    .cohort-section h2 {
+        line-height: 2.5rem;
+        font-size: 1.7rem;
+    }
+
+    .available_courses {
+        width: 95%;
+    }
+
+    .available_courses_flex {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .available_courses .content h3 {
+        font-size: 1.15rem;
+    }
+
+
+    .available_courses .image {
+        width: 68%;
+        height: auto;
+    }
+
+    .message_section h4 {
+        font-size: 1.4rem;
+    }
+
+
+    .date_instruction {
+        flex-direction: column;
+        gap: 1.4rem;
+    }
+
+
+    .date_instruction .date h4 {
+        line-height: 2rem;
+        font-size: 1.1rem;
+    }
+
+
+
+    .date_instruction .instruction b {
+        line-height: 1.7rem;
+        font-size: 1.1rem;
+        color: var(--ColorOne);
+    }
+
+
+    .registration_form_con {
+        width: 95%;
+    }
+
+    .registration_form_section form .input_box label {
+        font-size: .9rem;
+    }
+
+    .greetings p {
+        font-size: 1rem;
+    }
+
 }

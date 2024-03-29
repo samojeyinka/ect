@@ -10,7 +10,8 @@ include("connection.php");
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Hello, world!</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -62,6 +63,14 @@ include("connection.php");
         </section>
         <section class="registration_form_section">
             <div class="registration_form_con">
+                <div class="date_instruction">
+                    <div class="date">
+                        <h4>EXPANSION CYBER TECH ACADEMY<strong> APRIL 2024 TECH TRAINING COHORT</strong></h4>
+                    </div>
+                    <div class="instruction">
+                        <b>Fill the form below with your correct information to register for the Next Training Session starting on 29th April 2024.</b>
+                    </div>
+                </div>
                 <form name="form" action="register.php" method="POST">
                     <div class="input_box">
                         <label for="full_name">Full Name *</label>
