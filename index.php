@@ -75,27 +75,27 @@ include("connection.php");
                 <form name="form" action="register.php" method="POST">
                     <div class="input_box">
                         <label for="full_name">Full Name *</label>
-                        <input type="text" name="full_name" id="full_name" />
+                        <input type="text" name="full_name" id="full_name" required />
                     </div>
                     <div class="input_box">
                         <label for="email">Email Address *</label>
-                        <input type="email" name="email" id="email" />
+                        <input type="email" name="email" id="email" required />
                     </div>
                     <div class="input_box">
                         <label for="home_address">Home Address *</label>
-                        <input type="text" name="home_address" id="home_address" />
+                        <input type="text" name="home_address" id="home_address" required />
                     </div>
                     <div class="input_box">
                         <label for="whatsapp_no">WhatsApp Phone number *</label>
-                        <input type="number" name="whatsapp_no" id="whatsapp_no" />
+                        <input type="number" name="whatsapp_no" id="whatsapp_no" required />
                     </div>
                     <div class="input_box">
                         <label for="course">Course interested- UI/UX, Web design, Fontend, Backend, Fullstack *</label>
-                        <input type="text" name="course" id="course" />
+                        <input type="text" name="course" id="course" required />
                     </div>
                     <div class="input_box">
                         <label for="experience">Any previous experience (Yes/No) *</label>
-                        <textarea name="experience" id="experience">
+                        <textarea name="experience" id="experience" required >
 
                 </textarea>
                     </div>
