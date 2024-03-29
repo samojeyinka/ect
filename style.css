@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --ColorOne: #F2F2F2FF;
+    --ColorTwo: #3E5776FF;
+    --ColorThree: #FEB52FFF;
+    --ColorFour: #B4C0D2FF;
+    --ColorFive: #BECFE8FF;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Roboto, Arial, serif;
+}
+
+input,textarea{
+    border: none;
+    outline: none;
+    color: var(--ColorTwo);
+}
+
+.index{
+    padding: .5rem 0;
+    background: var(--ColorOne);
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.introduction_section{
+    margin: auto !important;
+    width: 80%;
+    background: var(--ColorOne);
+}
+
+.introduction_section_flex{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.introduction_section h1{
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    color: var(--ColorTwo);
+}
+.introduction_section .banner{
+    margin: auto !important;
+    width: 80%;
+    height: auto !important;
+}
+
+.introduction_section img{
+width: 100%;
+height: 100%;
+}
+
+.content_flex_container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.content_flex_container p{
+    line-height:2rem ;
+    font-size: 1.15rem;
+    color: var(--ColorTwo);
+}
+
+
+/* cohort-section */
+
+.cohort-section{
+    margin: auto !important;
+    width: 80%;
+    height: 18rem;
+    background-image: url("./images/cohort2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.cohort-section::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.244);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+
+.cohort-section h2{
+    line-height: 4rem;
+    font-size:2.5rem;
+    font-weight: bolder;
+    color: #fff;
+    width: 80%;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 7%;
+    
+}
+
+.available_courses{
+    margin: auto !important;
+    width: 70%;
+    background: var(--ColorOne);
+}
+
+.available_courses_flex{
+    margin: 4rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.available_courses .content h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--ColorTwo);
+}
+
+
+.available_courses .image {
+    width: 40%;
+    height: 40%;
+}
+
+.available_courses .image img{
+    width: 100%;
+    height: 100%;
+}
+.courses_box{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    
+}
+
+.courses_box h4{
+    font-size: 1.15rem;
+    font-family:serif;
+    font-weight: 600;
+    color: var(--ColorTwo);
+}
+
+
+.message_section{
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.message_section h4{
+    text-align: center;
+    font-size:1.7rem;
+    color: #0A7048FF;
+}
+
+
+
+.registration_form_section{
+    padding: 3rem 0;
+    width: 100%;
+    height: auto !important;
+    background: rgb(10, 112, 72);
+}
+
+.registration_form_con{
+    width: 70%;
+    margin: auto;
+}
+
+.registration_form_section form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.registration_form_section form .input_box{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.registration_form_section form .input_box label{
+color: var(--ColorOne);
+}
+
+.registration_form_section form .input_box input{
+    padding: .8rem;
+}
+
+
+.registration_form_section form .input_box input:focus{
+    outline: 3px solid var(--ColorFour);
+}
+
+.registration_form_section form .input_box textarea{
+    padding: .5rem;
+    max-width: 100% ;
+    height: 6rem;
+}
+
+.registration_form_section form .input_box .btn{
+    font-size: 1.05rem;
+    font-weight: 600;
+    width: 8rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.registration_form_section form .input_box .btn:hover{
+   background: rgb(90, 211, 102);
+   color: var(--ColorOne);
+   transition: .2s ease-in-out;
+}
+
+
+.greetings{
+    padding-top: 5rem;
+    width: 100%;
+}
+
+.greetings p{
+    font-size: 1.15rem;
+    color: var(--ColorOne);
+    text-align: center;
+}
+
+
+.social_links{
+    padding: 1rem 0;
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.social_links .fa-brands{
+    font-size: 1.1rem;
+}
+
+.social_links a{
+    color: var(--ColorOne);
+}
+
+
+footer{
+    padding: 1rem 0;
+    width: 100%;
+    height: auto;
+    background: #fff;
+}
+
+footer .sponsor{
+    width: 20rem;
+    margin: auto;
+}
+
+footer .sponsor img{
+    width: 100%;
+}
+
+
+.welcome{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.styled-hr {
+    width: 40%;
+    border: none; 
+    border-top: 1px solid var(--ColorTwo); 
+    margin: auto;
+    padding: .5rem 0;
+}
